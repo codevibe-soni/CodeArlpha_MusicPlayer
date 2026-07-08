@@ -41,7 +41,7 @@ let songs = [
         name:"Sapne bde",
         path:"Assets/sapnebde.mp3",
         image:"Assets/spne bde.jpg",
-        singer:"Unknown"
+        singer:"Amit Trivedi"
     },
 ];
 

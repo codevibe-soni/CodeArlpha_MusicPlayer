@@ -318,7 +318,8 @@ transform: scale(1.1);
 main{
 flex-direction:column;
 padding:20px;
-height:auto;
+height:100vh;
+
 }
 
 .left,
@@ -354,7 +355,7 @@ font-size:1.2rem;
 main{
 flex-direction:column;
 padding:30px;
-height:auto;
+height:100vh;
 }
 
 .left,
