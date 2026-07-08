@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Playlist -->
+
+    <header>
+
+<button  id="Playlist-btn"><i class="fa-brands fa-napster" id="playList-img"></i></button>
+<h2>Feel the songs</h2>
+<i class="fa-solid fa-music" id="music-icon"></i>
+</header>
+
+<main>
+    <div class="left">
+
+        <div class="song-img">
+            <img src="./Assets/animation.webp" alt="animation" id="animation">
+        </div>
+
+        <div class="volume">
+            <div class="volume-img" >
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <input type="range" id="volume-range" onchange="volume()" min="0" value="100" oninput="volume()" max="100">
+        </div>
+
+
+
+    </div>
+
+
+    <div class="right">
+        <div class="details">
+            <h3 id="songName">Love me like you do</h3>
+            <h5 id="song-singer">Ellie Goulding</h5>
+        </div>
+
+        <input type="range" id="song-duration" min="0" max="100" value="0" onchange="Duration()">
+        <div class="controls">
+            <div class="icon-continer">
+           <button  onclick="previous()"> <i class="fa-solid fa-angle-left" id="previous"></i></button>
+           <button  onclick="playPause()"> <i class="fa-solid fa-play" id="play-pause"></i></button>
+            <button  onclick="next()"><i class="fa-solid fa-angle-right" id="next"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="playlist">
+        <div class="songplaylist">
+            <img src="./Assets/singer1.jpg" alt="">
+            <div class="song-details">
+                <h4>Love me like you do</h4>
+                <h6>Ellie Goulding</h6>
+            </div>
+        </div>
+
+        <div class="songplaylist">
+              <img src="./Assets/belibverimg.jpg" alt="">
+          <div class="song-details">
+          <h4>Belever</h4>
+          <h6>Imagine Drageon</h6>
+        </div>
+        </div>
+
+        <div class="songplaylist">
+              <img src="./Assets/unstopable.jpg" alt="">
+  <div class="song-details">
+      <h4>unstopable</h4>
+      <h6>Sia</h6>
+        </div>
+         </div>
+        
+        <div class="songplaylist">
+              <img src="./Assets/spne bde.jpg" alt="">
+  <div class="song-details">
+      <h4>Sapne bde</h4>
+      <h6>Amit Trivedi</h6>
+        </div>
+    </div>
+
+</main>
+   <script src="script.js"></script> 
+</body>
+</html>
