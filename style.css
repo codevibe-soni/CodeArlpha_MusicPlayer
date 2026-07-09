@@ -7,7 +7,8 @@
 }
 body{
     overflow: hidden;
-    height: auto;
+    height:100vh;
+   
 }
 header{
     width: 100vw;
@@ -26,7 +27,7 @@ header h2{
 
 main{
     width: 100vw;
-    height: calc(11 0vh - 85px);
+    height: calc(110vh - 85px);
     background-color:rgb(29, 30, 30) ;
     display: flex;
     align-items: center;
